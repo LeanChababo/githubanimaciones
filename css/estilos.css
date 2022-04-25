@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;1,100;1,200;1,500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#grilla{
+    display: grid;
+    grid-template-areas: "header1 header1 header1 header1" "nav1 nav1 nav1 nav1" "adopcion adopcion adopcion publicidad" "descmichi1 descmichi1 descmichi2 descmichi2" "galeria galeria galeria2 galeria2" "footer footer footer footer"
+    ;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 100px 33px 350px 50px 400px 100px;
+    
+}
+
+
+#navegacion {
+    grid-area: nav1;
+    background-color: rgba(241, 174, 72, 0.952);
+	color: beige;
+    display: inline-block;
+    align-items: center;
+    
+    
+}
+
+
+.menu-nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-nav li {
+    list-style: none;
+    background-color: rgb(255, 61, 61);
+    text-transform: capitalize;
+    padding: 5px;
+    border: 1px solid pink;
+    display: inline;
+}
+
+.menu-nav a {
+    text-decoration: none;
+    color: burlywood;
+    cursor: pointer;
+}
+
+.icon-menu{
+    padding: 5px;
+    color: black;
+    display: none;
+}
+
+header {
+    grid-area: header1;
+    background-image: url(../img/gatos.jpg)
+    
+}
+
+.titulo1 {
+    text-align: center;
+    background-color: bisque;
+    text-transform: capitalize;
+}
+
+#plan-adopcion {
+    grid-area: adopcion;
+    background-color: beige;
+    box-sizing: content-box;
+}
+
+.plan {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.publicidad {
+    grid-area: publicidad;
+    background-color: violet;
+}
+
+#descripcion-michi {
+    grid-area: descmichi1;
+    background-color: red;
+}
+
+.videomichis {
+    text-align: center;
+    margin-top: 2vh;
+
+}
+
+#descripcion-michi2 {
+    grid-area: descmichi2;
+    background-color: yellow;
+}
+
+.videotutorial {
+    text-align: center;
+    margin-top: 2vh;
+}
+
+
+#galeria {
+    grid-area: galeria;
+    
+}
+
+#galeria2 {
+    grid-area: galeria2;
+}
+
+footer {
+    grid-area: footer;
+	background-color: rgb(56, 50, 50);
+	width: 100%;
+}
+
+
+.footer-estilo {
+    color: rgb(255, 61, 61);
+    text-transform: capitalize;
+    line-height: 3vh;
+    margin-left: 5vh;
+    margin-top: 1vh;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+    font-size: larger;
+    font-weight: 20;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    list-style-type: none;
+}
+
+/* css como adoptar */
+
+#grilla2 {
+    display: grid;
+    grid-template-areas: "header1 header1 header1 header1" "nav1 nav1 nav1 nav1" "comoadoptar comoadoptar comoadoptar fotogato1" "fotogato2 compromisos compromisos compromisos" "footer footer footer footer";
+    grid-template-rows: 100px 33px 350px 350px 100px;
+    grid-template-columns: repeat(4,1fr);
+}
+
+#como-adoptar{
+    grid-area: comoadoptar;
+    background-color: beige;
+}
+
+.fotogato1 {
+    grid-area: fotogato1;
+    border: 2px double brown;
+    
+    
+}
+
+.fotogato2 {
+    grid-area: fotogato2;
+    border: 2px double brown;
+    
+}
+
+#compromisos {
+    grid-area: compromisos;
+    background-color: wheat;
+}
+
+.parrafo-adoptar {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5vh;
+    line-height: 4vh;
+    border: 2px double pink;
+    margin-top: 10px;
+}
+
+.titulo2 {
+    text-align: center;
+    background-color: bisque;
+    color: brown;
+    text-transform: capitalize;
+}
+
+.titulo3 {
+    text-align: center;
+    color: white;
+    font-size: larger;
+    text-transform: capitalize;
+    background-color: darkgoldenrod;
+}
+
+.texto-compromisos{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 3vh;
+    line-height: 4vh;
+    border: 2px double pink;
+    margin-top: 10px;
+}
+

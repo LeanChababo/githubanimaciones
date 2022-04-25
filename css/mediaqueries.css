@@ -1,0 +1,38 @@
+@media only screen and (max-width: 600px) {
+
+    #navegacion {
+        position: relative;
+    }
+
+    .icon-menu {
+        display: block;
+        color: black;
+        font-size: larger;
+        cursor: pointer;
+    }
+    
+}
+
+@media only screen and (max-width: 1200px) {
+    
+    #plan-adopcion {
+        overflow-y: scroll;
+    }
+
+    #como-adoptar {
+        overflow-y: scroll;
+    }
+
+    #compromisos {
+        overflow-y: scroll;
+    }
+}
+
+@media(max-width: 880px){
+    .footer-estilo {
+        display:block;
+        color:black; 
+        padding:0px;
+        margin: 0px;
+    } 
+}
